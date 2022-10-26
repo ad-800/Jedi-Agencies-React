@@ -34,7 +34,7 @@ let agencies = [
     description: 'Founded by Dylanto Daa.',
     tags: ['industry'],
     grade: 'Jedi'
-  }
+  },
 ]
 
 export default agencies;

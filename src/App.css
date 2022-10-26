@@ -1,15 +1,32 @@
 html {
-  background-color: #0F0B0D;
   color: #DEDCE5;
   text-align: center;
+  background: radial-gradient(circle at bottom, navy 0, black 100%);
+}
+
+p {
+  font-family: 'Jura', sans-serif;
 }
 
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: DEDCE5center;
   margin: 1rem;
+}
+
+h2 {
+  font-family: 'Jura', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'Audiowide', cursive;
+  font-size: 45px;
+}
+
+.space {
+  background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
 }
 
 h2 {
@@ -18,6 +35,17 @@ h2 {
 
 a {
   color: white;
+  font-family: 'Jura', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
 }
 
 .container {
@@ -31,21 +59,23 @@ a {
 
 .agency-list {
   border: 1px solid white;
-  margin: 10px;
+  margin: 15px;
   width: 250px;
-  height: 100px;
+  height: 120px;
   padding: 25px;
   position: relative;
+  background-color: rgba(0,0,0,.7);
 }
 
 .badge {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -10px;
+  top: -9px;
   background-color: #DEDCE5;
   color: #0F0B0D;
   padding: 0px 5px;
   line-height: 1px;
+  border-radius: 20%;
 }
 
 .form {
@@ -66,4 +96,13 @@ label {
 
 label > * {
   margin: 5px 0;
+}
+
+.search-bar {
+  margin-top: 25px;
+  width: 50%;
+  padding: 5px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
 }

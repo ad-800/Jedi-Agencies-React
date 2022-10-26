@@ -30,7 +30,7 @@ class List extends Component {
   render() {
     return (
       <div>
-        <input type="text" placeholder="Search" onChange={this.filterFunction} />
+        <input type="text" placeholder="Search" className="search-bar" onChange={this.filterFunction} />
         <div className='container'>
           {this.renderList()}
         </div>

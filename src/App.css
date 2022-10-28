@@ -2,6 +2,7 @@ html {
   color: #DEDCE5;
   text-align: center;
   background: radial-gradient(circle at bottom, navy 0, black 100%);
+  min-height: 100vh;
 }
 
 p {
@@ -23,10 +24,6 @@ h2 {
 h1 {
   font-family: 'Audiowide', cursive;
   font-size: 45px;
-}
-
-.space {
-  background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
 }
 
 h2 {
@@ -51,7 +48,7 @@ a:hover {
 .container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 800px;
+  width: 800px;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
@@ -71,18 +68,45 @@ a:hover {
   position: absolute;
   right: -10px;
   top: -9px;
-  background-color: #DEDCE5;
   color: #0F0B0D;
   padding: 0px 5px;
   line-height: 1px;
   border-radius: 20%;
 }
 
+.badge-Jedi {
+  background-color: #0942ED;
+  color: white;
+}
+
+.badge-Padawan {
+  background-color: #18C825;
+  color: black;
+}
+
+.badge-Master {
+  background-color: #B50104;
+  color: white;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
+  background-color: rgba(0,0,0,.7);
+  width: 500px;
+  margin-top: 20px;
   padding: 10px;
+}
+
+label > .lg-input {
+  height: 50px;
+  border-radius: 5px;
+}
+
+label > .sm-input {
+  height: 25px;
+  border-radius: 5px;
 }
 
 label {
@@ -90,19 +114,38 @@ label {
   flex-direction: column;
   text-align: left;
   margin: 5px;
-  font-size: 14px;
+  font-size: 16px;
   padding: 5px;
+  font-style: italic;
 }
 
 label > * {
   margin: 5px 0;
+  font-family: 'Jura', sans-serif;
+  font-size: 15px;
 }
 
 .search-bar {
   margin-top: 25px;
-  width: 50%;
   padding: 5px;
   background-color: black;
   border: 1px solid white;
+  color: white;
+  width: 50%;
+}
+
+.btn-flat {
+  color: white;
+  margin-top: 20px;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #18C825;
+  transition: background 0.3s ease;
+  font-family: 'Audiowide', cursive;
+  font-size: 15px;
+}
+
+.btn-flat:hover {
+  background: #A1DA85;
   color: white;
 }

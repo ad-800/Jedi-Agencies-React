@@ -9,10 +9,10 @@ function Form(props) {
   return (
     <form className="form">
       <label>Corporation Name
-        <input name="name" type="text" onChange={(event) => setName(event.target.value)} />
+        <input name="name" type="text" className="sm-input" onChange={(event) => setName(event.target.value)} />
       </label>
       <label>Description
-        <input name="description" type="text" onChange={(event) => setDescription(event.target.value)} />
+        <textarea name="description" className="lg-input" type="text" onChange={(event) => setDescription(event.target.value)}></textarea>
       </label>
       <label>Tags
         <select name="tags" multiple={true} onChange={(event) => setTags(event.target.value)}>
@@ -23,13 +23,13 @@ function Form(props) {
         </select>
       </label>
       <label>Grade
-        <select name='grade' onChange={(event) => setGrade(event.target.value)}>
+        <select name='grade' className="sm-input" onChange={(event) => setGrade(event.target.value)}>
             <option value="Master">Master</option>
             <option value="Jedi">Jedi</option>
             <option value="Padawan">Padawan</option>
         </select>
       </label>
-      <input className="button" type="button" value="Submit" onClick={() => {props.handleForm({name: name, description: description, tags: tags, grade: grade})}} />
+      <input className="btn-flat" type="button" value="Submit" onClick={() => {props.handleForm({name: name, description: description, tags: tags, grade: grade})}} />
     </form>
   );
 }

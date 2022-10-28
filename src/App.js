@@ -43,7 +43,7 @@ class App extends Component {
      let padawan = this.state.agencies.filter((agency) => {return agency.grade.indexOf('Padawan') !== -1});
 
     return (
-      <div className="App space stars1 stars2 stars3">
+      <div className="App">
         <Router>
           <Header></Header>
           <div className="container">
